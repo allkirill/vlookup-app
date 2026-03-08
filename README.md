@@ -38,7 +38,6 @@ https://vlookup-app.ru
 
 Контакты и доработки
 Если нужен открытый код, увеличение лимита, или разработка индивидуальных решений под твои задачи:
-Email: kirill.sebekin@gmail.com
 Telegram: @allkirill
 
 Лицензия
