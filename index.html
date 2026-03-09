@@ -821,8 +821,73 @@ A-003   | <span class="code-function">Раковина NEW</span>   | 8000</code
             });
         });
     </script>
+<!-- Футер с политикой конфиденциальности -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">VLOOKUP-APP</div>
+        
+        <div class="footer-text">
+            🔒 <button type="button" class="privacy-toggle" onclick="togglePrivacy()" style="background:none; border:none; color:var(--muted); text-decoration:underline; cursor:pointer; padding:0; font-size:0.875rem;">
+                Политика конфиденциальности
+            </button>
+            <span style="opacity:0.6; margin:0 0.5rem;">|</span>
+            <span>Сайт использует Яндекс.Метрику для статистики</span>
+        </div>
+    </div>
+    
+    <!-- Скрытый блок политики -->
+    <div id="privacy-accordion" class="accordion" style="max-width:600px; margin:1.5rem auto 0; display:none;">
+        <div class="accordion-toggle" onclick="togglePrivacy()">
+            <span>📄 Текст политики конфиденциальности</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                <p><strong>1. Что собираем</strong><br>
+                Сайт автоматически собирает только технические данные: IP-адрес, информацию о браузере и устройстве, файлы cookie. Эти данные обезличены.</p>
+                
+                <p><strong>2. Зачем</strong><br>
+                Только для статистики посещаемости через Яндекс.Метрику. Чтобы понимать, работает ли сайт.</p>
+                
+                <p><strong>3. Яндекс.Метрика</strong><br>
+                На сайте установлен счётчик Яндекс.Метрики. Он собирает анонимную статистику. Яндекс обрабатывает данные согласно своей <a href="https://yandex.ru/legal/metrica_termsofuse/" target="_blank" style="color:var(--accent);">оферте</a>.</p>
+                
+                <p><strong>4. Ваши права</strong><br>
+                Вы можете запретить сбор данных, отключив cookie в настройках браузера.</p>
+                
+                <p style="margin-top:1rem; font-size:0.75rem; opacity:0.7;">
+                Владелец сайта не передаёт данные третьим лицам. Документ актуален на момент публикации.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+function togglePrivacy() {
+    const accordion = document.getElementById('privacy-accordion');
+    const content = accordion.querySelector('.accordion-content');
+    const toggle = accordion.querySelector('.accordion-toggle');
+    
+    // Показываем аккордеон при первом клике
+    if (accordion.style.display === 'none' || accordion.style.display === '') {
+        accordion.style.display = 'block';
+        setTimeout(() => {
+            content.classList.add('open');
+            toggle.classList.add('open');
+        }, 10);
+    } else {
+        // Переключаем открытие/закрытие
+        content.classList.toggle('open');
+        toggle.classList.toggle('open');
+    }
+}
+</script>
 </body>
 </html>
+
 
 
 
