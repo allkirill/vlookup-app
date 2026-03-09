@@ -1013,4 +1013,19 @@ body {
     .scroll-indicator {
         animation: none;
     }
+
+}
+/* Ссылка политики в подвале */
+.footer-privacy a:hover {
+    color: var(--fg);
+    text-decoration: underline;
+}
+
+/* Адаптив для мобилок - чтобы в столбик встало */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
 }
