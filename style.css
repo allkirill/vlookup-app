@@ -14,7 +14,6 @@
 --code-bg: #f1f5f9;
 }
 
-/* ✅ ИСПРАВЛЕНО: добавлен селектор * */
 *, *::before, *::after {
 margin: 0;
 padding: 0;
@@ -897,3 +896,4 @@ transform: none;
 animation: none;
 }
 }
+
