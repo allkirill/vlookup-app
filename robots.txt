@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://allkirill.github.io/vlookup-app/sitemap.xml
+Host: https://allkirill.github.io/vlookup-app/
